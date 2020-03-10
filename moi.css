@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% {
+  -webkit-transform: translate3d(0,-4px,0);
+  transform: translate3d(0,-4px,0);
+  }
+  }
+  
+  @keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+  }
+  } 
+
+  .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
+
+
+header {
+  background-image: url(./banière.png);
+  background-size: cover;
+  height: 800px;
+  color: #f8f9fa;
+  width: 100%;
+  }
+header h1 {
+  margin: 0px;
+}
+header nav {
+  position: fixed;
+}
+
+.navigation ul li {
+  margin-bottom: 20px;
+
+}
+
+.navigation ul li:hover {
+  animation: bounce 1s;
+}
+
+ .nav_barre li a:link {
+
+  text-decoration: none; 
+  padding: 5px;
+  background-color: #62BCB8;
+  -webkit-box-shadow: 5px 3px 0px 0px rgba(192,232,167,0.8);
+  -moz-box-shadow: 5px 3px 0px 0px rgba(192,232,167,0.8);
+  box-shadow: 5px 3px 0px 0px rgba(192,232,167,0.8);
+}
+
+.navigation {
+  margin-left: -35px;
+}
+
+a:visited {
+  color: white;
+}
+
+
+.titre {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 200px;
+ font-family: Chalkduster;
+ font-size: 2em;
+ animation: fadeIn 9s;
+}
+
+
+.titre2 {
+	text-align: center;
+    padding-top: 50px;
+    color: #62BCB8;
+    margin: 0px;
+    font-size: 2em;
+  }
+
+.down {
+  display: flex;
+  justify-content: center;
+  padding-top: 250px;
+}
+
+.down img {
+  height: 50px;
+  width: 50px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+#aboutme {
+	background-color: rgb(249 240 199);
+  height: 800px;
+  margin-top: 0px;
+}
+
+.petit_descriptif {
+  display: flex;
+  justify-content: center;
+}
+
+
+.description > ul > li {
+	margin-bottom: 20px;
+}
+
+.passion > ul > li {
+  display: inline-block;
+}
+
+.section {
+  margin-left: 10%;
+  padding-top: 30px;
+  color: rgb(128 201 198);
+}
+
+.passion{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.passion > ul > li > img {
+  margin: 0px 60px 0px 60px;
+  height: 50px;
+  width: 50px;
+}
+
+a:link {
+ color: black;
+ text-decoration: underline;
+}
+
+a:link:hover {
+  color: rgb(128 201 198);
+}
+
+.photo {
+  display: flex;
+  justify-content: center; 
+  padding-top: 30px;
+  padding-right: 50px;
+  width: 40%;
+
+}
+
+.photomoi {
+  height: 210px;
+  width: 160px;
+}
+
+.description ul li img {
+
+  height: 30px;
+  width: 30px;
+}
+
+.down2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.down2 img {
+  height: 50px;
+  width: 50px;
+}
+
+#expérience {
+  height: 800px;
+  margin-top: 0px;
+}
